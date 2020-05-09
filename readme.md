@@ -1,5 +1,10 @@
 # Docker com NodeJS
 
+Docker empacota toda aplicação em container.
+Os container potem comunicar-se entre si,
+resolve o problema de versionamento de libs, ja que a lib definida em um container vai ser a mesma 
+usada em todos os host que o container tiver disponível.
+
 ## docker ponpose
 
 É um orquestrador do Docker
@@ -38,3 +43,10 @@ Define como nossa nossa aplicaçao vai _funcionar_ | como o servidor deve subir
 | `docker-compose up`                       | executa o compose                           |
 | `docker build -t [image-name] .`          | cria a imagem do container na raiz (.)      |
 | `docker run -p 3000:3000 -d [image-name]` | roda a imagem criada especificando a porta  |
+
+
+### Imagens
+
+  As imagens são as "regras" da aplicação, é como um
+  template / modelo onde é definido o sistema operacional, 
+  dependências e regras que são disponibilizadas para uso nos containers
